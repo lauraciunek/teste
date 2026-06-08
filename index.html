@@ -1,262 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Meu Blog</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family:'Poppins',sans-serif;
-    background:#f5f7fa;
-    color:#333;
-}
-
-/* Header */
-header{
-    background:white;
-    padding:20px 8%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    box-shadow:0 2px 15px rgba(0,0,0,.05);
-    position:sticky;
-    top:0;
-}
-
-.logo{
-    font-size:1.8rem;
-    font-weight:700;
-    color:#4f46e5;
-}
-
-nav a{
-    text-decoration:none;
-    color:#555;
-    margin-left:25px;
-    font-weight:500;
-    transition:.3s;
-}
-
-nav a:hover{
-    color:#4f46e5;
-}
-
-/* Hero */
-.hero{
-    height:70vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    background:linear-gradient(135deg,#4f46e5,#7c3aed);
-    color:white;
-    padding:20px;
-}
-
-.hero-content h1{
-    font-size:3.5rem;
-    margin-bottom:15px;
-}
-
-.hero-content p{
-    font-size:1.2rem;
-    opacity:.9;
-    max-width:700px;
-    margin:auto;
-}
-
-.btn{
-    display:inline-block;
-    margin-top:30px;
-    padding:14px 30px;
-    background:white;
-    color:#4f46e5;
-    text-decoration:none;
-    border-radius:50px;
-    font-weight:600;
-    transition:.3s;
-}
-
-.btn:hover{
-    transform:translateY(-3px);
-}
-
-/* Blog */
-.blog-section{
-    padding:80px 8%;
-}
-
-.section-title{
-    text-align:center;
-    margin-bottom:50px;
-}
-
-.section-title h2{
-    font-size:2.5rem;
-}
-
-.posts{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:30px;
-}
-
-.card{
-    background:white;
-    border-radius:20px;
-    overflow:hidden;
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
-    transition:.3s;
-}
-
-.card:hover{
-    transform:translateY(-8px);
-}
-
-.card img{
-    width:100%;
-    height:220px;
-    object-fit:cover;
-}
-
-.card-content{
-    padding:25px;
-}
-
-.card-content span{
-    color:#4f46e5;
-    font-size:.9rem;
-    font-weight:600;
-}
-
-.card-content h3{
-    margin:12px 0;
-}
-
-.card-content p{
-    color:#666;
-    line-height:1.6;
-}
-
-.read-more{
-    display:inline-block;
-    margin-top:15px;
-    text-decoration:none;
-    color:#4f46e5;
-    font-weight:600;
-}
-
-/* Footer */
-footer{
-    background:#111827;
-    color:white;
-    text-align:center;
-    padding:30px;
-    margin-top:60px;
-}
-
-@media(max-width:768px){
-
-    .hero-content h1{
-        font-size:2.5rem;
-    }
-
-    nav{
-        display:none;
-    }
-
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Moderno</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <div class="container">
+            <h1>Blog Moderno</h1>
+            <nav>
+                <a href="#">Início</a>
+                <a href="#">Sobre</a>
+                <a href="#">Contato</a>
+            </nav>
+        </div>
+    </header>
 
-<header>
-    <div class="logo">Blog+</div>
+    <main class="container">
+        <section class="posts">
+            <article class="post-card">
+                <h2>Primeiro Post</h2>
+                <p>Bem-vindo ao meu blog moderno! Aqui você encontrará conteúdos interessantes e visuais atraentes.</p>
+                <a href="#" class="read-more">Ler mais →</a>
+            </article>
 
-    <nav>
-        <a href="#">Início</a>
-        <a href="#">Artigos</a>
-        <a href="#">Categorias</a>
-        <a href="#">Sobre</a>
-        <a href="#">Contato</a>
-    </nav>
-</header>
+            <article class="post-card">
+                <h2>Segundo Post</h2>
+                <p>Explorando novas ideias e dicas sobre desenvolvimento web e design moderno para blogs.</p>
+                <a href="#" class="read-more">Ler mais →</a>
+            </article>
 
-<section class="hero">
-    <div class="hero-content">
-        <h1>Ideias, Tecnologia e Criatividade</h1>
-        <p>
-            Descubra conteúdos inspiradores sobre desenvolvimento,
-            design, produtividade e tendências digitais.
-        </p>
+            <article class="post-card">
+                <h2>Terceiro Post</h2>
+                <p>Aprenda a criar layouts responsivos, com cores modernas e fontes elegantes, como este que você está vendo.</p>
+                <a href="#" class="read-more">Ler mais →</a>
+            </article>
+        </section>
+    </main>
 
-        <a href="#" class="btn">Explorar Artigos</a>
-    </div>
-</section>
-
-<section class="blog-section">
-
-    <div class="section-title">
-        <h2>Últimas Publicações</h2>
-    </div>
-
-    <div class="posts">
-
-        <article class="card">
-            <img src="https://picsum.photos/600/400?1" alt="">
-            <div class="card-content">
-                <span>Tecnologia</span>
-                <h3>As tendências que vão dominar 2025</h3>
-                <p>
-                    Conheça as tecnologias emergentes que estão
-                    transformando o mercado digital.
-                </p>
-                <a href="#" class="read-more">Ler artigo →</a>
-            </div>
-        </article>
-
-        <article class="card">
-            <img src="https://picsum.photos/600/400?2" alt="">
-            <div class="card-content">
-                <span>Design</span>
-                <h3>Como criar interfaces modernas</h3>
-                <p>
-                    Princípios essenciais para desenvolver layouts
-                    elegantes e agradáveis.
-                </p>
-                <a href="#" class="read-more">Ler artigo →</a>
-            </div>
-        </article>
-
-        <article class="card">
-            <img src="https://picsum.photos/600/400?3" alt="">
-            <div class="card-content">
-                <span>Produtividade</span>
-                <h3>Hábitos para trabalhar melhor</h3>
-                <p>
-                    Estratégias práticas para manter o foco e aumentar
-                    sua produtividade diariamente.
-                </p>
-                <a href="#" class="read-more">Ler artigo →</a>
-            </div>
-        </article>
-
-    </div>
-
-</section>
-
-<footer>
-    <p>© 2026 Blog+ • Todos os direitos reservados.</p>
-</footer>
-
+    <footer>
+        <p>© 2026 Blog Moderno. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
