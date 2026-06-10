@@ -79,9 +79,9 @@ nav a:hover{
 
     background:linear-gradient(
         90deg,
-        #7c3aed,
-        #ec4899,
-        #f59e0b
+        #327c12,
+        #40c575,
+        #6ec15e
     );
 
     -webkit-background-clip:text;
@@ -107,7 +107,7 @@ nav a:hover{
 
     border-radius:40px;
 
-    background:#7c3aed;
+    background:#307b2a;
 
     color:white;
 
@@ -126,7 +126,7 @@ nav a:hover{
 
     background:white;
 
-    color:#7c3aed;
+    color:#d6f5d9;
 
     padding:15px 35px;
 
