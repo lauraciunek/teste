@@ -1,253 +1,78 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    font-family:'Poppins',sans-serif;
-    background:#f8fafc;
-    overflow-x:hidden;
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f8f5;
+    color: #333;
+    padding: 20px;
 }
 
-/* HEADER */
-
-header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-
-    padding:25px 8%;
-    background:white;
-
-    box-shadow:0 5px 20px rgba(0,0,0,.05);
+/* Cabeçalho */
+header {
+    background-color: #4caf50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
 }
 
-.logo{
-    font-size:28px;
-    font-weight:700;
-    color:#7c3aed;
+header h1 {
+    margin-bottom: 10px;
 }
 
-nav a{
-    text-decoration:none;
-    margin:0 15px;
-    color:#444;
-    font-weight:500;
-    transition:.3s;
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
-nav a:hover{
-    color:#7c3aed;
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.btn-menu{
-    border:none;
-    padding:12px 25px;
-    border-radius:30px;
-
-    background:linear-gradient(
-        45deg,
-        #7c3aed,
-        #ec4899
-    );
-
-    color:white;
-    cursor:pointer;
+nav a:hover {
+    text-decoration: underline;
 }
 
-/* HERO */
-
-.hero{
-
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-
-    min-height:85vh;
-
-    padding:0 8%;
+/* Seções */
+section {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-.hero-text{
-    max-width:600px;
+/* Botões */
+button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
 }
 
-.hero-text h1{
-    font-size:70px;
-    line-height:1.1;
-
-    background:linear-gradient(
-        90deg,
-        #327c12,
-        #40c575,
-        #6ec15e
-    );
-
-    -webkit-background-clip:text;
-    color:transparent;
+button:hover {
+    background-color: #45a049;
 }
 
-.hero-text p{
-    margin:25px 0;
-    font-size:20px;
-    color:#555;
-}
-
-.buttons{
-    display:flex;
-    gap:15px;
-}
-
-.btn-primary{
-
-    border:none;
-
-    padding:15px 35px;
-
-    border-radius:40px;
-
-    background:#307b2a;
-
-    color:white;
-
-    cursor:pointer;
-
-    transition:.3s;
-}
-
-.btn-primary:hover{
-    transform:translateY(-3px);
-}
-
-.btn-secondary{
-
-    border:2px solid #7c3aed;
-
-    background:white;
-
-    color:#d6f5d9;
-
-    padding:15px 35px;
-
-    border-radius:40px;
-
-    cursor:pointer;
-}
-
-/* CÍRCULOS */
-
-.hero-image{
-    position:relative;
-    width:450px;
-    height:450px;
-}
-
-.circle{
-    position:absolute;
-    border-radius:50%;
-}
-
-.pink{
-    width:250px;
-    height:250px;
-    background:#ec4899;
-    top:50px;
-    left:100px;
-}
-
-.blue{
-    width:180px;
-    height:180px;
-    background:#3b82f6;
-    bottom:20px;
-    left:0;
-}
-
-.yellow{
-    width:150px;
-    height:150px;
-    background:#f59e0b;
-    top:0;
-    right:0;
-}
-
-/* CARDS */
-
-.cards{
-
-    padding:80px 8%;
-
-    display:grid;
-
-    grid-template-columns:
-    repeat(auto-fit,minmax(250px,1fr));
-
-    gap:30px;
-}
-
-.card{
-
-    background:white;
-
-    padding:35px;
-
-    border-radius:25px;
-
-    box-shadow:
-    0 15px 30px rgba(0,0,0,.08);
-
-    transition:.3s;
-}
-
-.card:hover{
-
-    transform:
-    translateY(-10px);
-}
-
-.card h2{
-    margin-bottom:15px;
-}
-
-.card p{
-    color:#666;
-}
-
-/* FOOTER */
-
-footer{
-
-    background:#111827;
-
-    color:white;
-
-    text-align:center;
-
-    padding:40px;
-}
-
-/* RESPONSIVO */
-
-@media(max-width:900px){
-
-.hero{
-    flex-direction:column;
-    text-align:center;
-    padding:50px 8%;
-}
-
-.hero-text h1{
-    font-size:50px;
-}
-
-.hero-image{
-    margin-top:50px;
-    width:300px;
-    height:300px;
-}
-
-.buttons{
-    justify-content:center;
-}
+/* Rodapé */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px;
+    font-size: 0.9rem;
+    color: #555;
 }
