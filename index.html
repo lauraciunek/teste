@@ -1,50 +1,106 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agronomia Sustentável</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
     <header>
-        <h1>Agronomia Sustentável</h1>
+        <h1>🌱 AgroTech Sustentável</h1>
+
         <nav>
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#praticas">Práticas</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
+            <a href="#inicio">Início</a>
+            <a href="#sustentabilidade">Sustentabilidade</a>
+            <a href="#tecnologia">Tecnologia</a>
+            <a href="#contato">Contato</a>
         </nav>
     </header>
 
-    <main>
-        <section id="sobre">
-            <h2>Sobre a Agronomia Sustentável</h2>
-            <p>
-                A agronomia sustentável busca métodos de cultivo que respeitam o meio ambiente, 
-                conservam os recursos naturais e promovem a saúde do solo.
-            </p>
-            <button onclick="window.location.href='https://www.embrapa.br/'">Saiba Mais na Embrapa</button>
-        </section>
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h2>O Futuro da Agricultura é Sustentável</h2>
 
-        <section id="praticas">
-            <h2>Práticas Sustentáveis</h2>
             <p>
-                Exemplos de práticas incluem plantio direto, rotação de culturas, uso eficiente de água e redução de agrotóxicos.
+                Produzir mais, preservando o solo, a água e o meio ambiente.
             </p>
-            <button onclick="window.location.href='https://www.fao.org/sustainable-agriculture/en/'">FAO - Agricultura Sustentável</button>
-        </section>
 
-        <section id="contato">
-            <h2>Contato</h2>
-            <p>Entre em contato conosco para mais informações sobre práticas de agronomia sustentável.</p>
-            <button onclick="window.location.href='mailto:contato@agronomiasustentavel.com'">Enviar Email</button>
-        </section>
-    </main>
+            <div class="buttons">
+                <a href="#sustentabilidade" class="btn">Saiba Mais</a>
+                <a href="#tecnologia" class="btn btn-green">Tecnologias</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sustentabilidade">
+        <h2>Agronomia Sustentável</h2>
+
+        <p>
+            A agronomia sustentável busca equilibrar produtividade agrícola e preservação ambiental.
+            Ela utiliza técnicas que reduzem impactos no ecossistema e promovem o uso consciente dos recursos naturais.
+        </p>
+
+        <div class="card-container">
+            <div class="card">
+                <h3>🌿 Plantio Direto</h3>
+                <p>Reduz erosão e melhora a conservação do solo.</p>
+            </div>
+
+            <div class="card">
+                <h3>💧 Uso Eficiente da Água</h3>
+                <p>Sistemas modernos de irrigação diminuem desperdícios.</p>
+            </div>
+
+            <div class="card">
+                <h3>♻ Rotação de Culturas</h3>
+                <p>Ajuda a manter nutrientes e controlar pragas naturalmente.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="tecnologia">
+        <h2>Tecnologias no Campo</h2>
+
+        <div class="card-container">
+
+            <div class="card">
+                <h3>🚁 Drones</h3>
+                <p>Monitoramento de lavouras em tempo real.</p>
+            </div>
+
+            <div class="card">
+                <h3>📡 Sensores</h3>
+                <p>Controle preciso de nutrientes e umidade.</p>
+            </div>
+
+            <div class="card">
+                <h3>🛰 Agricultura de Precisão</h3>
+                <p>Decisões inteligentes baseadas em dados.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+
+        <form>
+            <input type="text" placeholder="Seu nome">
+            <input type="email" placeholder="Seu e-mail">
+            <textarea rows="5" placeholder="Sua mensagem"></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
 
     <footer>
-        <p>&copy; 2026 Agronomia Sustentável. Todos os direitos reservados.</p>
+        <p>© 2026 AgroTech Sustentável</p>
     </footer>
+
 </body>
+
 </html>
