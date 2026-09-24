@@ -52,7 +52,7 @@ nav a:hover{
         135deg,
         #f469b6,
         #f17ec8,
-        #cf4887
+        #d97fa9
     );
     display:flex;
     justify-content:center;
@@ -166,7 +166,7 @@ button{
 }
 
 button:hover{
-    background:#f68cd1;
+    background:#f6bcd3;
 }
 
 footer{
